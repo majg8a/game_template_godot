@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct2m3511fugn3"]
+
+[ext_resource type="PackedScene" uid="uid://bcrbl21e0pps2" path="res://map/map.tscn" id="1_rhjjp"]
+[ext_resource type="Script" path="res://random_walk/random_walk.gd" id="2_60wq8"]
+
+[node name="random_walk" type="Node2D"]
+
+[node name="map" parent="." instance=ExtResource("1_rhjjp")]
+script = ExtResource("2_60wq8")
