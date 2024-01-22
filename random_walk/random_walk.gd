@@ -1,6 +1,6 @@
 class_name random_walk extends map
 
-var iterations: int = 250
+var iterations: int = 10000
 var startingPosition: Vector2 = Vector2.ZERO
 var roomNumber: int = 2
 var hallwayLength: int = 1000
