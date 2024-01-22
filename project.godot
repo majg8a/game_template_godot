@@ -14,8 +14,3 @@ config/name="game template"
 run/main_scene="res://map/map.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
-
-[autoload]
-
-Direction="*res://global_scripts/direction.gd"
-Walk="*res://global_scripts/walk.gd"

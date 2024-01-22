@@ -10,4 +10,4 @@ var reactionTimeSec = 1
 
 func behavior():
 	await get_tree().create_timer(reactionTimeSec).timeout
-	Walk.random(self,speed)
+	
