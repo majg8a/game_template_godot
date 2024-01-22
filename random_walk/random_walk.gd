@@ -1,9 +1,9 @@
 class_name random_walk extends map
 
-var iterations: int = 10000
+var iterations: int = 1000
 var startingPosition: Vector2 = Vector2.ZERO
-var roomNumber: int = 2
-var hallwayLength: int = 1000
+var roomNumber: int = 50
+var hallwayLength: int = 5
 
 func generate():
 	var floor: Dictionary = {}
@@ -24,6 +24,7 @@ func generate():
 			for j in range(hallwayLength):
 				currentPosition = fardestDir[currentDirection]
 				currentPosition = addToFloor(floor,fardestDir,currentPosition,currentDirection)
+				tileMap.set_cell(0,currentPosition,0,Vector2i(0,0))
 			continue
 		currentPosition = addToFloor(floor,fardestDir, currentPosition ,currentDirection)
 		currentDirection = direction.getRandomDirection()
